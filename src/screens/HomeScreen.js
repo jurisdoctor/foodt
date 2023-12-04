@@ -44,7 +44,7 @@ const HomeScreen = () => {
 
         {/* Featured */}
         <View className="mt-5">
-          {[featured, featured, featured].map((item, index) => {
+          {featured.map((item, index) => {
             return (
               <FeaturedRow
                 key={index}
