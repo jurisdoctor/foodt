@@ -51,7 +51,7 @@ export const featured = [
         dishes: [
           {
             id: 1,
-            name: "Bún Gà Nướng",
+            name: "Bún Gà Thịt Nướng",
             description: "Grilled Lemongrass Chicken & Rice Noodle",
             price: 15.25,
             image: require("../assets/images/phoauntie-chicken.png"),
