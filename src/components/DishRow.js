@@ -33,6 +33,7 @@ const DishRow = ({ item }) => {
           <View className="flex-row items-center">
             <TouchableOpacity
               onPress={handleDecrease}
+              disabled={!totalItems.length}
               style={{ backgroundColor: themeColors.bgColor(1) }}
               className="bg-blue p-1 rounded-full"
             >
@@ -45,11 +46,11 @@ const DishRow = ({ item }) => {
             </TouchableOpacity>
             <Text className="px-3">{totalItems.length}</Text>
             <TouchableOpacity
+              onPress={handleIncrease}
               style={{ backgroundColor: themeColors.bgColor(1) }}
               className="bg-blue p-1 rounded-full"
             >
               <Icon.Plus
-                onPress={handleIncrease}
                 strokeWidth={2}
                 height={20}
                 width={20}
